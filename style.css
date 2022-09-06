@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+:root{
+--verydarkblue: hsl(212, 21%, 14%);
+--darkgrayishblue: hsl(228, 12%, 48%);
+--white: hsl(0, 0%, 100%);
+--darkcyan: hsl(158, 36%, 37%);
+--cream: hsl(30, 38%, 92%);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(./fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+/* @font-face {
+    font-family: Fraunces;
+    src: url(./fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);    
+} */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--cream);
+    overflow: hidden;    
+}
+img{
+    width: 100%;
+}
+section.main-container{
+    background-color: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: "prod content";
+    width: 40%;
+    border-radius: 14px;
+}
+.right-col{
+    grid-area: content;
+    padding: 3em;
+    
+}
+.left-col{
+    grid-area: prod;    
+    background: url(./imgs/image-product-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+}
+h5{
+    font-family: Montserrat;
+    letter-spacing: .5em;
+    text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+    
+}
+h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    text-transform: capitalize;
+    margin: .5em 1em .5em 0;
+    line-height: 1em;
+    color: var(--verydarkblue)
+}
+p{
+    font-family: Montserrat;
+    color: var(--darkgrayishblue);  
+    font-weight: 500;
+    font-size: 1.000em;
+    padding: 0 1em 2em 0;
+    line-height: 1.5em;
+}
+.price-container{
+    display: flex;    
+    padding-bottom: 2em;
+}
+.discounted-price{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color: var(--darkcyan);
+    font-size: 2.5em;
+}
+.price{
+    height: auto;
+    text-decoration: line-through;
+    color: var(--darkgrayishblue);
+}
+.cart{
+   width: 14px;
+}
+.btn-cart{
+    width: 100%;
+    display: inline-block;
+    padding: 1em;
+    border-radius: 0.375rem;;
+    border: none;
+    background-color: var(--darkcyan);
+    color: var(--white);
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: normal;
+    line-height: 1.5;
+    text-align: center;
+}
+
+
