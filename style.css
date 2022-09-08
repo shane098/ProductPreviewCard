@@ -96,14 +96,13 @@ p{
     background-color: var(--verydarkcyan)
 }
 
-@media only screen and (max-width: 1439px) and (min-width: 375px) {
+@media (min-width: 375px) {
     section.main-container{               
         border-top-left-radius: 14px;    
         border-top-right-radius: 14px;            
     }
     .right-col{
         padding: 2em;
-
     }
     .mobile-prod    {
         border-top-left-radius: 14px;    
