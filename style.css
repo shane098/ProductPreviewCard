@@ -62,6 +62,9 @@ p{
     color: var(--darkgrayishblue);  
     font-weight: 500;    
 }
+.price-container{
+    display: flex;
+}
 .discounted-price{
     font-weight: 700;
     color: var(--darkcyan)
@@ -177,6 +180,7 @@ p{
         line-height: 1.5em;
     }
     .price-container{        
+        
         padding-bottom: 2em;        
     }
     .discounted-price{        
